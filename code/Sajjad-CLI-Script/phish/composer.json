@@ -1,0 +1,6 @@
+{
+    "require": {
+        "nikic/php-parser": "^4.11"
+    },
+    "bin": ["main.php"]
+}
