@@ -52,26 +52,11 @@ def Sha1Hasher(file_path):
 
 
 list_of_all_kit_url_files=['/home/kali/phishfinder/kits.txt']#,'/home/kali/phishfinder_openphish/phishfinder/kits.txt','/home/kali/phishfinder_github/phishfinder/kits.txt','/home/kali/phishfinder-modified/kits.txt']
-#list_of_all_kit_url_files.append('/home/kali/Phishing_Kits_phishunt/phishing_kits/Sep_2021/urls_new.txt')
-#list_of_all_kit_url_files.append('/home/kali/phishfinder/kits/collected_kits/small_kits/ALL_KITS_OF_INTEREST/kits.txt')
 list_of_all_kit_url_files.append('/home/kali/phishfinder/kits/collected_kits/small_kits/ALL_KITS_OF_INTEREST/openphish_kits.txt')
 list_of_all_kit_url_files.append('/home/kali/phishfinder/kits/collected_kits/small_kits/ALL_KITS_OF_INTEREST/phishtank_kits.txt')
 list_of_all_kit_url_files.append('/home/kali/phishfinder/kits/collected_kits/small_kits/ALL_KITS_OF_INTEREST/apwg_kits.txt')
 list_of_all_kit_url_files.append('/home/kali/phishfinder/kits/collected_kits/small_kits/ALL_KITS_OF_INTEREST/urls_new.txt')
-#list_of_all_kit_url_files.append('/home/kali/Phishing_Kits_phishunt/phishing_kits/Jul_2020/urls_new.txt')
-#list_of_all_kit_url_files.append('/home/kali/Phishing_Kits_phishunt/phishing_kits/Jul_2021/urls_new.txt')
-#list_of_all_kit_url_files.append('/home/kali/Phishing_Kits_phishunt/phishing_kits/Jun_2020/urls_new.txt')
-#list_of_all_kit_url_files.append('/home/kali/Phishing_Kits_phishunt/phishing_kits/Jun_2021/urls_new.txt')
-#list_of_all_kit_url_files.append('/home/kali/Phishing_Kits_phishunt/phishing_kits/Mar_2021/urls_new.txt')
-#list_of_all_kit_url_files.append('/home/kali/Phishing_Kits_phishunt/phishing_kits/May_2020/urls_new.txt')
-#list_of_all_kit_url_files.append('/home/kali/Phishing_Kits_phishunt/phishing_kits/May_2021/urls_new.txt')
-#list_of_all_kit_url_files.append('/home/kali/Phishing_Kits_phishunt/phishing_kits/Nov_2020/urls_new.txt')
-#list_of_all_kit_url_files.append('/home/kali/Phishing_Kits_phishunt/phishing_kits/Oct_2020/urls_new.txt')
-#list_of_all_kit_url_files.append('/home/kali/Phishing_Kits_phishunt/phishing_kits/Sep_2020/urls_new.txt')
-#list_of_all_kit_url_files.append('/home/kali/Phishing_Kits_Lab/openphish/kits.txt')
-#list_of_all_kit_url_files.append('/home/kali/Phishing_Kits_Lab/phishtank/kits.txt')
 
-#/home/kali/Phishing_Kits_phishunt/phishing_kits/Aug_2021/urls.txt"
 KIT_DIRECTORY= "/home/kali/phishfinder/kits/collected_kits/small_kits/ALL_KITS_OF_INTEREST/"
 PROGPILOT_OUTPUT=KIT_DIRECTORY+"PROGPILOT-OUTPUT/"
 URL_ULTIMATE_LIST_FILE= KIT_DIRECTORY+"ultimate_url_list.txt"
@@ -153,10 +138,6 @@ MY_EXCEL_FILE_NAME = "PhishKitAnalysis-"+date_time+".xlsx"
 #MY_EXCEL_FILE_NAME = "TelegramBotFinder-"+date_time+".xlsx"
 
 workbook.save(filename=MY_EXCEL_FILE_NAME)
-
-'''f = open(MY_KIT_LIST,"r")
-for p in f:
-	zip_files.append(p.strip())'''
 
 for file1 in glob.glob("*.zip"):
     zip_files.append(file1)
